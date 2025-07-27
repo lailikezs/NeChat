@@ -1,68 +1,25 @@
-FROM node:18-alpine AS base
+FROM fabiocicerchia/nginx-lua:1.27.5-alpine3.21.3
+LABEL maintainer="LibreTV Team"
+LABEL description="LibreTV - 免费在线视频搜索与观看平台"
 
-FROM base AS deps
+# 复制应用文件
+COPY . /usr/share/nginx/html
 
-RUN apk add --no-cache libc6-compat
+# 复制Nginx配置文件
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-WORKDIR /app
+# 添加执行权限并设置为入口点脚本
+COPY docker-entrypoint.sh /
+RUN chmod +x /docker-entrypoint.sh
 
-COPY package.json yarn.lock ./
+# 暴露端口
+EXPOSE 80
 
-RUN yarn config set registry 'https://registry.npmmirror.com/'
-RUN yarn install
+# 设置入口点
+ENTRYPOINT ["/docker-entrypoint.sh"]
 
-FROM base AS builder
+# 启动nginx
+CMD ["nginx", "-g", "daemon off;"]
 
-RUN apk update && apk add --no-cache git
-
-ENV OPENAI_API_KEY=""
-ENV GOOGLE_API_KEY=""
-ENV CODE=""
-
-WORKDIR /app
-COPY --from=deps /app/node_modules ./node_modules
-COPY . .
-
-RUN yarn build
-
-FROM base AS runner
-WORKDIR /app
-
-RUN apk add proxychains-ng
-
-ENV PROXY_URL=""
-ENV OPENAI_API_KEY=""
-ENV GOOGLE_API_KEY=""
-ENV CODE=""
-ENV ENABLE_MCP=""
-
-COPY --from=builder /app/public ./public
-COPY --from=builder /app/.next/standalone ./
-COPY --from=builder /app/.next/static ./.next/static
-COPY --from=builder /app/.next/server ./.next/server
-
-RUN mkdir -p /app/app/mcp && chmod 777 /app/app/mcp
-COPY --from=builder /app/app/mcp/mcp_config.default.json /app/app/mcp/mcp_config.json
-
-EXPOSE 3000
-
-CMD if [ -n "$PROXY_URL" ]; then \
-    export HOSTNAME="0.0.0.0"; \
-    protocol=$(echo $PROXY_URL | cut -d: -f1); \
-    host=$(echo $PROXY_URL | cut -d/ -f3 | cut -d: -f1); \
-    port=$(echo $PROXY_URL | cut -d: -f3); \
-    conf=/etc/proxychains.conf; \
-    echo "strict_chain" > $conf; \
-    echo "proxy_dns" >> $conf; \
-    echo "remote_dns_subnet 224" >> $conf; \
-    echo "tcp_read_time_out 15000" >> $conf; \
-    echo "tcp_connect_time_out 8000" >> $conf; \
-    echo "localnet 127.0.0.0/255.0.0.0" >> $conf; \
-    echo "localnet ::1/128" >> $conf; \
-    echo "[ProxyList]" >> $conf; \
-    echo "$protocol $host $port" >> $conf; \
-    cat /etc/proxychains.conf; \
-    proxychains -f $conf node server.js; \
-    else \
-    node server.js; \
-    fi
+# 健康检查
+HEALTHCHECK --interval=30s --timeout=3s CMD wget --quiet --tries=1 --spider http://localhost/ || exit 1

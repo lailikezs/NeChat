@@ -1,476 +1,198 @@
-<div align="center">
-
-<a href='https://nextchat.club'>
-  <img src="https://github.com/user-attachments/assets/83bdcc07-ae5e-4954-a53a-ac151ba6ccf3" width="1000" alt="icon"/>
-</a>
-
-
-
-
-<h1 align="center">NextChat (ChatGPT Next Web)</h1>
-
-English / [简体中文](./README_CN.md)
-
-<a href="https://trendshift.io/repositories/5973" target="_blank"><img src="https://trendshift.io/api/badge/repositories/5973" alt="ChatGPTNextWeb%2FChatGPT-Next-Web | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
-
-
-✨ Light and Fast AI Assistant,with Claude, DeepSeek, GPT4 & Gemini Pro support. 
-
-[![Saas][Saas-image]][saas-url]
-[![Web][Web-image]][web-url]
-[![Windows][Windows-image]][download-url]
-[![MacOS][MacOS-image]][download-url]
-[![Linux][Linux-image]][download-url]
-
-[NextChatAI](https://nextchat.dev/chat?utm_source=readme) / [Web App Demo](https://app.nextchat.dev) / [Desktop App](https://github.com/Yidadaa/ChatGPT-Next-Web/releases) 
-[NextChatAI](https://nextchat.club?utm_source=readme) / [Web App Demo](https://app.nextchat.dev) / [Desktop App](https://github.com/Yidadaa/ChatGPT-Next-Web/releases) / [Discord](https://discord.gg/YCkeafCafC) / [Enterprise Edition](#enterprise-edition) / [Twitter](https://twitter.com/NextChatDev)
-
-
-[saas-url]: https://nextchat.club?utm_source=readme
-[saas-image]: https://img.shields.io/badge/NextChat-Saas-green?logo=microsoftedge
-[web-url]: https://app.nextchat.dev/
-[download-url]: https://github.com/Yidadaa/ChatGPT-Next-Web/releases
-[Web-image]: https://img.shields.io/badge/Web-PWA-orange?logo=microsoftedge
-[Windows-image]: https://img.shields.io/badge/-Windows-blue?logo=windows
-[MacOS-image]: https://img.shields.io/badge/-MacOS-black?logo=apple
-[Linux-image]: https://img.shields.io/badge/-Linux-333?logo=ubuntu
-
-[<img src="https://zeabur.com/button.svg" alt="Deploy on Zeabur" height="30">](https://zeabur.com/templates/ZBUEFA) [<img src="https://vercel.com/button" alt="Deploy on Vercel" height="30">](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FChatGPTNextWeb%2FChatGPT-Next-Web&env=OPENAI_API_KEY&env=CODE&project-name=nextchat&repository-name=NextChat)  [<img src="https://gitpod.io/button/open-in-gitpod.svg" alt="Open in Gitpod" height="30">](https://gitpod.io/#https://github.com/ChatGPTNextWeb/NextChat) 
-
-[<img src="https://github.com/user-attachments/assets/903482d4-3e87-4134-9af1-f2588fa90659" height="50" width="" >](https://monica.im/?utm=nxcrp)
-
-</div>
-
-## 🥳 Cheer for DeepSeek, China's AI star!
- > Purpose-Built UI for DeepSeek Reasoner Model
- 
-<img src="https://github.com/user-attachments/assets/f3952210-3af1-4dc0-9b81-40eaa4847d9a"/>
-
-
-
-## 🫣 NextChat Support MCP  ! 
-> Before build, please set env ENABLE_MCP=true
-
-<img src="https://github.com/user-attachments/assets/d8851f40-4e36-4335-b1a4-ec1e11488c7e"/>
-
-
-## Enterprise Edition
-
-Meeting Your Company's Privatization and Customization Deployment Requirements:
-- **Brand Customization**: Tailored VI/UI to seamlessly align with your corporate brand image.
-- **Resource Integration**: Unified configuration and management of dozens of AI resources by company administrators, ready for use by team members.
-- **Permission Control**: Clearly defined member permissions, resource permissions, and knowledge base permissions, all controlled via a corporate-grade Admin Panel.
-- **Knowledge Integration**: Combining your internal knowledge base with AI capabilities, making it more relevant to your company's specific business needs compared to general AI.
-- **Security Auditing**: Automatically intercept sensitive inquiries and trace all historical conversation records, ensuring AI adherence to corporate information security standards.
-- **Private Deployment**: Enterprise-level private deployment supporting various mainstream private cloud solutions, ensuring data security and privacy protection.
-- **Continuous Updates**: Ongoing updates and upgrades in cutting-edge capabilities like multimodal AI, ensuring consistent innovation and advancement.
-
-For enterprise inquiries, please contact: **business@nextchat.dev**
-
-## Screenshots
-
-![Settings](./docs/images/settings.png)
-
-![More](./docs/images/more.png)
-
-
-## Features
-
-- **Deploy for free with one-click** on Vercel in under 1 minute
-- Compact client (~5MB) on Linux/Windows/MacOS, [download it now](https://github.com/Yidadaa/ChatGPT-Next-Web/releases)
-- Fully compatible with self-deployed LLMs, recommended for use with [RWKV-Runner](https://github.com/josStorer/RWKV-Runner) or [LocalAI](https://github.com/go-skynet/LocalAI)
-- Privacy first, all data is stored locally in the browser
-- Markdown support: LaTex, mermaid, code highlight, etc.
-- Responsive design, dark mode and PWA
-- Fast first screen loading speed (~100kb), support streaming response
-- New in v2: create, share and debug your chat tools with prompt templates (mask)
-- Awesome prompts powered by [awesome-chatgpt-prompts-zh](https://github.com/PlexPt/awesome-chatgpt-prompts-zh) and [awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts)
-- Automatically compresses chat history to support long conversations while also saving your tokens
-- I18n: English, 简体中文, 繁体中文, 日本語, Français, Español, Italiano, Türkçe, Deutsch, Tiếng Việt, Русский, Čeština, 한국어, Indonesia
+# LibreTV - 免费在线视频搜索与观看平台
 
 <div align="center">
-   
-![主界面](./docs/images/cover.png)
-
+  <img src="image/logo.png" alt="LibreTV Logo" width="120">
+  <br>
+  <p><strong>自由观影，畅享精彩</strong></p>
 </div>
 
-## Roadmap
+## 📺 项目简介
 
-- [x] System Prompt: pin a user defined prompt as system prompt [#138](https://github.com/Yidadaa/ChatGPT-Next-Web/issues/138)
-- [x] User Prompt: user can edit and save custom prompts to prompt list
-- [x] Prompt Template: create a new chat with pre-defined in-context prompts [#993](https://github.com/Yidadaa/ChatGPT-Next-Web/issues/993)
-- [x] Share as image, share to ShareGPT [#1741](https://github.com/Yidadaa/ChatGPT-Next-Web/pull/1741)
-- [x] Desktop App with tauri
-- [x] Self-host Model: Fully compatible with [RWKV-Runner](https://github.com/josStorer/RWKV-Runner), as well as server deployment of [LocalAI](https://github.com/go-skynet/LocalAI): llama/gpt4all/rwkv/vicuna/koala/gpt4all-j/cerebras/falcon/dolly etc.
-- [x] Artifacts: Easily preview, copy and share generated content/webpages through a separate window [#5092](https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web/pull/5092)
-- [x] Plugins: support network search, calculator, any other apis etc. [#165](https://github.com/Yidadaa/ChatGPT-Next-Web/issues/165) [#5353](https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web/issues/5353)
-  - [x] network search, calculator, any other apis etc. [#165](https://github.com/Yidadaa/ChatGPT-Next-Web/issues/165) [#5353](https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web/issues/5353)
-- [x] Supports Realtime Chat [#5672](https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web/issues/5672)
-- [ ] local knowledge base
+LibreTV 是一个轻量级、免费的在线视频搜索与观看平台，提供来自多个视频源的内容搜索与播放服务。无需注册，即开即用，支持多种设备访问。项目结合了前端技术和后端代理功能，可部署在支持服务端功能的各类网站托管服务上。
 
-## What's New
-- 🚀 v2.15.8 Now supports Realtime Chat [#5672](https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web/issues/5672)
-- 🚀 v2.15.4 The Application supports using Tauri fetch LLM API, MORE SECURITY! [#5379](https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web/issues/5379)
-- 🚀 v2.15.0 Now supports Plugins! Read this: [NextChat-Awesome-Plugins](https://github.com/ChatGPTNextWeb/NextChat-Awesome-Plugins)
-- 🚀 v2.14.0 Now supports  Artifacts & SD 
-- 🚀 v2.10.1 support Google Gemini Pro model.
-- 🚀 v2.9.11 you can use azure endpoint now.
-- 🚀 v2.8 now we have a client that runs across all platforms!
-- 🚀 v2.7 let's share conversations as image, or share to ShareGPT!
-- 🚀 v2.0 is released, now you can create prompt templates, turn your ideas into reality! Read this: [ChatGPT Prompt Engineering Tips: Zero, One and Few Shot Prompting](https://www.allabtai.com/prompt-engineering-tips-zero-one-and-few-shot-prompting/).
+本项目基于 [bestK/tv](https://github.com/bestK/tv) 进行重构与增强。
 
-## Get Started
+<details>
+  <summary>点击查看项目截图</summary>
+  <img src="https://github.com/user-attachments/assets/df485345-e83b-4564-adf7-0680be92d3c7" alt="项目截图" style="max-width:600px">
+</details>
 
-1. Get [OpenAI API Key](https://platform.openai.com/account/api-keys);
-2. Click
-   [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FYidadaa%2FChatGPT-Next-Web&env=OPENAI_API_KEY&env=CODE&project-name=chatgpt-next-web&repository-name=ChatGPT-Next-Web), remember that `CODE` is your page password;
-3. Enjoy :)
+## 🥇 感谢赞助
 
-## FAQ
+- **[YXVM](https://yxvm.com)**  
+- **[ZMTO/VTEXS](https://zmto.com)**
 
-[English > FAQ](./docs/faq-en.md)
+## 🚀 快速部署
 
-## Keep Updated
+选择以下任一平台，点击一键部署按钮，即可快速创建自己的 LibreTV 实例：
 
-If you have deployed your own project with just one click following the steps above, you may encounter the issue of "Updates Available" constantly showing up. This is because Vercel will create a new project for you by default instead of forking this project, resulting in the inability to detect updates correctly.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FLibreSpark%2FLibreTV) [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/LibreSpark/LibreTV) 
 
-We recommend that you follow the steps below to re-deploy:
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/LibreSpark/LibreTV) 
 
-- Delete the original repository;
-- Use the fork button in the upper right corner of the page to fork this project;
-- Choose and deploy in Vercel again, [please see the detailed tutorial](./docs/vercel-cn.md).
+## ⚠️ 安全与隐私提醒
 
-### Enable Automatic Updates
+### 🔒 强烈建议设置密码保护
 
-> If you encounter a failure of Upstream Sync execution, please [manually update code](./README.md#manually-updating-code).
+为了您的安全和避免潜在的法律风险，我们**强烈建议**在部署时设置密码保护：
 
-After forking the project, due to the limitations imposed by GitHub, you need to manually enable Workflows and Upstream Sync Action on the Actions page of the forked project. Once enabled, automatic updates will be scheduled every hour:
+- **避免公开访问**：不设置密码的实例任何人都可以访问，可能被恶意利用
+- **防范版权风险**：公开的视频搜索服务可能面临版权方的投诉举报
+- **保护个人隐私**：设置密码可以限制访问范围，保护您的使用记录
 
-![Automatic Updates](./docs/images/enable-actions.jpg)
+### 📝 部署建议
 
-![Enable Automatic Updates](./docs/images/enable-actions-sync.jpg)
+1. **、设置环境变量 `PASSWORD`**：为您的实例设置一个强密码
+2. **仅供个人使用**：请勿将您的实例链接公开分享或传播
+3. **遵守当地法律**：请确保您的使用行为符合当地法律法规
 
-### Manually Updating Code
+### 🚨 重要声明
 
-If you want to update instantly, you can check out the [GitHub documentation](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) to learn how to synchronize a forked project with upstream code.
+- 本项目仅供学习和个人使用
+- 请勿将部署的实例用于商业用途或公开服务
+- 如因公开分享导致的任何法律问题，用户需自行承担责任
+- 项目开发者不对用户的使用行为承担任何法律责任
 
-You can star or watch this project or follow author to get release notifications in time.
+## ⚠️ 请勿使用 Pull Bot 自动同步
 
-## Access Password
+Pull Bot 会反复触发无效的 PR 和垃圾邮件，严重干扰项目维护。作者可能会直接拉黑所有 Pull Bot 自动发起的同步请求的仓库所有者。
 
-This project provides limited access control. Please add an environment variable named `CODE` on the vercel environment variables page. The value should be passwords separated by comma like this:
+**推荐做法：**
 
-```
-code1,code2,code3
-```
+建议在 fork 的仓库中启用本仓库自带的 GitHub Actions 自动同步功能（见 `.github/workflows/sync.yml`）。 
 
-After adding or modifying this environment variable, please redeploy the project for the changes to take effect.
+如需手动同步主仓库更新，也可以使用 GitHub 官方的 [Sync fork](https://docs.github.com/cn/github/collaborating-with-issues-and-pull-requests/syncing-a-fork) 功能。
 
-## Environment Variables
 
-### `CODE` (optional)
+## 📋 详细部署指南
 
-Access password, separated by comma.
+### Cloudflare Pages
 
-### `OPENAI_API_KEY` (required)
+1. Fork 或克隆本仓库到您的 GitHub 账户
+2. 登录 [Cloudflare Dashboard](https://dash.cloudflare.com/)，进入 Pages 服务
+3. 点击"创建项目"，连接您的 GitHub 仓库
+4. 使用以下设置：
+   - 构建命令：留空（无需构建）
+   - 输出目录：留空（默认为根目录）
+5. **⚠️ 重要：在"设置" > "环境变量"中添加 `PASSWORD` 变量**
+6. 点击"保存并部署"
 
-Your openai api key, join multiple api keys with comma.
+### Vercel
 
-### `BASE_URL` (optional)
+1. Fork 或克隆本仓库到您的 GitHub/GitLab 账户
+2. 登录 [Vercel](https://vercel.com/)，点击"New Project"
+3. 导入您的仓库，使用默认设置
+4. **⚠️ 重要：在"Settings" > "Environment Variables"中添加 `PASSWORD` 变量**
+5. 点击"Deploy"
+6. 可选：在"Settings" > "Environment Variables"中配置密码保护
 
-> Default: `https://api.openai.com`
 
-> Examples: `http://your-openai-proxy.com`
+### Docker
 
-Override openai api request base url.
+使用 Docker 运行 LibreTV：
 
-### `OPENAI_ORG_ID` (optional)
-
-Specify OpenAI organization ID.
-
-### `AZURE_URL` (optional)
-
-> Example: https://{azure-resource-url}/openai
-
-Azure deploy url.
-
-### `AZURE_API_KEY` (optional)
-
-Azure Api Key.
-
-### `AZURE_API_VERSION` (optional)
-
-Azure Api Version, find it at [Azure Documentation](https://learn.microsoft.com/en-us/azure/ai-services/openai/reference#chat-completions).
-
-### `GOOGLE_API_KEY` (optional)
-
-Google Gemini Pro Api Key.
-
-### `GOOGLE_URL` (optional)
-
-Google Gemini Pro Api Url.
-
-### `ANTHROPIC_API_KEY` (optional)
-
-anthropic claude Api Key.
-
-### `ANTHROPIC_API_VERSION` (optional)
-
-anthropic claude Api version.
-
-### `ANTHROPIC_URL` (optional)
-
-anthropic claude Api Url.
-
-### `BAIDU_API_KEY` (optional)
-
-Baidu Api Key.
-
-### `BAIDU_SECRET_KEY` (optional)
-
-Baidu Secret Key.
-
-### `BAIDU_URL` (optional)
-
-Baidu Api Url.
-
-### `BYTEDANCE_API_KEY` (optional)
-
-ByteDance Api Key.
-
-### `BYTEDANCE_URL` (optional)
-
-ByteDance Api Url.
-
-### `ALIBABA_API_KEY` (optional)
-
-Alibaba Cloud Api Key.
-
-### `ALIBABA_URL` (optional)
-
-Alibaba Cloud Api Url.
-
-### `IFLYTEK_URL` (Optional)
-
-iflytek Api Url.
-
-### `IFLYTEK_API_KEY` (Optional)
-
-iflytek Api Key.
-
-### `IFLYTEK_API_SECRET` (Optional)
-
-iflytek Api Secret.
-
-### `CHATGLM_API_KEY` (optional)
-
-ChatGLM Api Key.
-
-### `CHATGLM_URL` (optional)
-
-ChatGLM Api Url.
-
-### `DEEPSEEK_API_KEY` (optional)
-
-DeepSeek Api Key.
-
-### `DEEPSEEK_URL` (optional)
-
-DeepSeek Api Url.
-
-### `HIDE_USER_API_KEY` (optional)
-
-> Default: Empty
-
-If you do not want users to input their own API key, set this value to 1.
-
-### `DISABLE_GPT4` (optional)
-
-> Default: Empty
-
-If you do not want users to use GPT-4, set this value to 1.
-
-### `ENABLE_BALANCE_QUERY` (optional)
-
-> Default: Empty
-
-If you do want users to query balance, set this value to 1.
-
-### `DISABLE_FAST_LINK` (optional)
-
-> Default: Empty
-
-If you want to disable parse settings from url, set this to 1.
-
-### `CUSTOM_MODELS` (optional)
-
-> Default: Empty
-> Example: `+llama,+claude-2,-gpt-3.5-turbo,gpt-4-1106-preview=gpt-4-turbo` means add `llama, claude-2` to model list, and remove `gpt-3.5-turbo` from list, and display `gpt-4-1106-preview` as `gpt-4-turbo`.
-
-To control custom models, use `+` to add a custom model, use `-` to hide a model, use `name=displayName` to customize model name, separated by comma.
-
-User `-all` to disable all default models, `+all` to enable all default models.
-
-For Azure: use `modelName@Azure=deploymentName` to customize model name and deployment name.
-> Example: `+gpt-3.5-turbo@Azure=gpt35` will show option `gpt35(Azure)` in model list.
-> If you only can use Azure model, `-all,+gpt-3.5-turbo@Azure=gpt35` will `gpt35(Azure)` the only option in model list.
-
-For ByteDance: use `modelName@bytedance=deploymentName` to customize model name and deployment name.
-> Example: `+Doubao-lite-4k@bytedance=ep-xxxxx-xxx` will show option `Doubao-lite-4k(ByteDance)` in model list.
-
-### `DEFAULT_MODEL` （optional）
-
-Change default model
-
-### `VISION_MODELS` (optional)
-
-> Default: Empty
-> Example: `gpt-4-vision,claude-3-opus,my-custom-model` means add vision capabilities to these models in addition to the default pattern matches (which detect models containing keywords like "vision", "claude-3", "gemini-1.5", etc).
-
-Add additional models to have vision capabilities, beyond the default pattern matching. Multiple models should be separated by commas.
-
-### `WHITE_WEBDAV_ENDPOINTS` (optional)
-
-You can use this option if you want to increase the number of webdav service addresses you are allowed to access, as required by the format：
-- Each address must be a complete endpoint 
-> `https://xxxx/yyy`
-- Multiple addresses are connected by ', '
-
-### `DEFAULT_INPUT_TEMPLATE` (optional)
-
-Customize the default template used to initialize the User Input Preprocessing configuration item in Settings.
-
-### `STABILITY_API_KEY` (optional)
-
-Stability API key.
-
-### `STABILITY_URL` (optional)
-
-Customize Stability API url.
-
-
-### `ENABLE_MCP` (optional)
-
-Enable MCP（Model Context Protocol）Feature
-
-### `SILICONFLOW_API_KEY` (optional)
-
-SiliconFlow API Key.
-
-### `SILICONFLOW_URL` (optional)
-
-SiliconFlow API URL.
-
-## Requirements
-
-NodeJS >= 18, Docker >= 20
-
-## Development
-
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Yidadaa/ChatGPT-Next-Web)
-
-Before starting development, you must create a new `.env.local` file at project root, and place your api key into it:
-
-```
-OPENAI_API_KEY=<your api key here>
-
-# if you are not able to access openai service, use this BASE_URL
-BASE_URL=https://chatgpt1.nextweb.fun/api/proxy
+```bash
+docker run -d \
+  --name libretv \
+  -p 8899:80 \
+  -e PASSWORD=your_password_here \
+  bestzwei/libretv:latest
 ```
 
-### Local Development
+访问 `http://localhost:8899` 即可使用。
 
-```shell
-# 1. install nodejs and yarn first
-# 2. config local env vars in `.env.local`
-# 3. run
-yarn install
-yarn dev
+### Docker Compose
+
+ `docker-compose.yml` 文件：
+
+```yaml
+version: '3'
+services:
+  libretv:
+    image: bestzwei/libretv:latest
+    container_name: libretv
+    ports:
+      - "8899:80"
+    environment:
+      - PASSWORD=111111
+    restart: unless-stopped
 ```
 
-## Deployment
+### 本地开发环境
 
+项目包含后端代理功能，需要支持服务器端功能的环境：
 
-### Docker (Recommended)
+```bash
+# 首先，通过复制示例来设置 .env 文件（可选）
+cp .env.example .env
 
-```shell
-docker pull yidadaa/chatgpt-next-web
+# 安装依赖
+npm install
 
-docker run -d -p 3000:3000 \
-   -e OPENAI_API_KEY=sk-xxxx \
-   -e CODE=your-password \
-   yidadaa/chatgpt-next-web
+# 启动开发服务器
+npm run dev
 ```
 
-You can start service behind a proxy:
+访问 `http://localhost:8080` 即可使用（端口可在.env文件中通过PORT变量修改）。
 
-```shell
-docker run -d -p 3000:3000 \
-   -e OPENAI_API_KEY=sk-xxxx \
-   -e CODE=your-password \
-   -e PROXY_URL=http://localhost:7890 \
-   yidadaa/chatgpt-next-web
-```
+> ⚠️ 注意：使用简单静态服务器（如 `python -m http.server` 或 `npx http-server`）时，视频代理功能将不可用，视频无法正常播放。完整功能测试请使用 Node.js 开发服务器。
 
-If your proxy needs password, use:
+## 🔧 自定义配置
 
-```shell
--e PROXY_URL="http://127.0.0.1:7890 user pass"
-```
+### 密码保护
 
-If enable MCP, use：
+要为您的 LibreTV 实例添加密码保护，可以在部署平台上设置环境变量：
 
-```
-docker run -d -p 3000:3000 \
-   -e OPENAI_API_KEY=sk-xxxx \
-   -e CODE=your-password \
-   -e ENABLE_MCP=true \
-   yidadaa/chatgpt-next-web
-```
+**环境变量名**: `PASSWORD` 
+**值**: 您想设置的密码
 
-### Shell
+各平台设置方法：
 
-```shell
-bash <(curl -s https://raw.githubusercontent.com/Yidadaa/ChatGPT-Next-Web/main/scripts/setup.sh)
-```
+- **Cloudflare Pages**: Dashboard > 您的项目 > 设置 > 环境变量
+- **Vercel**: Dashboard > 您的项目 > Settings > Environment Variables
+- **Netlify**: Dashboard > 您的项目 > Site settings > Build & deploy > Environment
+- **Docker**: 使用 `-e PASSWORD=your_password` 参数
+- **本地开发**: SET PASSWORD=your_password
 
-## Synchronizing Chat Records (UpStash)
+### API兼容性
 
-| [简体中文](./docs/synchronise-chat-logs-cn.md) | [English](./docs/synchronise-chat-logs-en.md) | [Italiano](./docs/synchronise-chat-logs-es.md) | [日本語](./docs/synchronise-chat-logs-ja.md) | [한국어](./docs/synchronise-chat-logs-ko.md)
+LibreTV 支持标准的苹果 CMS V10 API 格式。添加自定义 API 时需遵循以下格式：
+- 搜索接口: `https://example.com/api.php/provide/vod/?ac=videolist&wd=关键词`
+- 详情接口: `https://example.com/api.php/provide/vod/?ac=detail&ids=视频ID`
 
-## Documentation
+**添加 CMS 源**:
+1. 在设置面板中选择"自定义接口"
+2. 接口地址: `https://example.com/api.php/provide/vod`
 
-> Please go to the [docs][./docs] directory for more documentation instructions.
+## ⌨️ 键盘快捷键
 
-- [Deploy with cloudflare (Deprecated)](./docs/cloudflare-pages-en.md)
-- [Frequent Ask Questions](./docs/faq-en.md)
-- [How to add a new translation](./docs/translation.md)
-- [How to use Vercel (No English)](./docs/vercel-cn.md)
-- [User Manual (Only Chinese, WIP)](./docs/user-manual-cn.md)
+播放器支持以下键盘快捷键：
 
+- **空格键**: 播放/暂停
+- **左右箭头**: 快退/快进
+- **上下箭头**: 音量增加/减小
+- **M 键**: 静音/取消静音
+- **F 键**: 全屏/退出全屏
+- **Esc 键**: 退出全屏
 
+## 🛠️ 技术栈
 
-## Translation
+- HTML5 + CSS3 + JavaScript (ES6+)
+- Tailwind CSS
+- HLS.js 用于 HLS 流处理
+- DPlayer 视频播放器核心
+- Cloudflare/Vercel/Netlify Serverless Functions
+- 服务端 HLS 代理和处理技术
+- localStorage 本地存储
 
-If you want to add a new translation, read this [document](./docs/translation.md).
+## ⚠️ 免责声明
 
-## Donation
+LibreTV 仅作为视频搜索工具，不存储、上传或分发任何视频内容。所有视频均来自第三方 API 接口提供的搜索结果。如有侵权内容，请联系相应的内容提供方。
 
-[Buy Me a Coffee](https://www.buymeacoffee.com/yidadaa)
+本项目开发者不对使用本项目产生的任何后果负责。使用本项目时，您必须遵守当地的法律法规。
 
-## Special Thanks
+## 💝 支持项目
 
+如果您想支持本项目，可以考虑进行捐款：
 
-
-### Contributors
-
-<a href="https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ChatGPTNextWeb/ChatGPT-Next-Web" />
-</a>
-
-## LICENSE
-
-[MIT](https://opensource.org/license/mit/)
-#   N e C h a t  
- 
+[![捐赠](https://img.shields.io/badge/爱心捐赠-无国界医生-1a85ff?style=for-the-badge&logo=medical-cross)](https://www.msf.hk/zh-hant/donate/general?type=one-off)
